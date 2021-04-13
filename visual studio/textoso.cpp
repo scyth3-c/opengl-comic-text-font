@@ -1,4 +1,4 @@
-#include "textoso.hpp"
+#include "gltext.hpp"
 #include <string>
 #include <vector>
 #include "render.hpp"
@@ -92,7 +92,7 @@ void Gltext::print() {
 		else if (it == 'o') {
 			Render_lo* o = new Render_lo(posx+0.007, posy);
 			o->~Render_lo();
-			posx += desfase;
+			posx += desfase + 0.007;
 		}
 		else if (it == 'p') {
 			Render_lp* p = new Render_lp(posx, posy);
@@ -172,6 +172,41 @@ void Gltext::allColor(int r, int g, int b) { Generic_Render::setColor(r,g,b);}
 void allColor(int r, int g, int b) {
 	Gltext::allColor(r, g, b);
 }
-void Gltext::changeScala(int x,int y) {
-	Generic_Render::setScala(x,y);
+void Gltext::changeScala(int es) {
+	Generic_Render::setScala(es,es);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
