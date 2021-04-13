@@ -1,6 +1,6 @@
 #include <GL/glut.h>
 #include "graficos.hpp"
-#include "gltext.hpp"
+#include "textoso.hpp"
 
 Graph::Graph() {
 
