@@ -1,6 +1,6 @@
 #include <GL/glut.h>
 #include "graficos.hpp"
-#include "textoso.hpp"
+#include "gltext.hpp"
 
 Graph::Graph() {
 
@@ -30,37 +30,18 @@ void Graph::display() {
 	glClear(GL_COLOR_BUFFER_BIT);
   
 	
-	/*
-	 allColor(1,1,0);
-
-	Gltext yes("yes", 0, 0.4, 0.04);
-	Gltext no("no", 0, 0.6);
-	Gltext hello("hello", 0, -0.5,0.035);
-
-	allColor(0, 1, 1);
-
-	Gltext scythe("sycthe", -0.5, 0);
-	Gltext al("alo", -0.5, -0.5);
-	
-	*/
-	
 	allColor(1, 1, 0);
-	Gltext arrow("pone huevos",0,0);
-	Gltext huesos("huesos", -0.5, 0);
-	Gltext hola("hello", 0.5,0.4);
-	
+
+	Gltext saludo("hello a cartoon word", 0, 0);
+
 	allColor(0, 1, 1);
 
-	Gltext yes("yes", -0.5, -0.4);
-	Gltext number("number", 0.5, -0.5);
-	Gltext rand("yerba hermana", -0.8,-0.8);
-	 
-
-	
-
-	
+	Gltext hello("hello", 0.5, 0.5);
 
 
+	allColor(0, 1, 0);
+	Gltext giant("> > >", 0.5, -0.8);
+  
 
 
 	glFlush();
