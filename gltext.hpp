@@ -22,8 +22,6 @@ public:
 	void split();
 	void print();
 	static void allColor(int, int, int);
-	static void smallText(bool);
+	static void changeScala(int,int); //experimental puede causar fallos greves
 };
-
 void allColor(int,int,int);
-void smallText(bool);

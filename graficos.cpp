@@ -43,8 +43,7 @@ void Graph::display() {
 	Gltext al("alo", -0.5, -0.5);
 	
 	*/
- 
-	/*
+	
 	allColor(1, 1, 0);
 	Gltext arrow("pone huevos",0,0);
 	Gltext huesos("huesos", -0.5, 0);
@@ -55,13 +54,11 @@ void Graph::display() {
 	Gltext yes("yes", -0.5, -0.4);
 	Gltext number("number", 0.5, -0.5);
 	Gltext rand("yerba hermana", -0.8,-0.8);
-	 */
+	 
 
 	
-	smallText(false);
-	Gltext a("abcd", 0, 0);
-	Gltext b("hola",-0.8,0);
-	Gltext c("abiar",0.5,0.5);
+
+	
 
 
 

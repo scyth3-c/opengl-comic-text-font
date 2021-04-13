@@ -14,7 +14,7 @@ protected:
 	static double scala[3];
 public:
 	static void setColor(int r, int g, int b) { color[0] = r; color[1] = g; color[2] = b; }
-	static void setScala(bool flag) { if (flag) { scala[0] = 0.8; scala[1] = 0.8; } else { scala[0] = 1; scala[1] = 1; } }
+	static void setScala(int x,int y) {  scala[0] = x; scala[1] = y; }
 	Generic_Render(double,double) {}
 	virtual void print() = 0;
 };

@@ -28,29 +28,29 @@ Render_lw::Render_lw(double _posx, double _posy) : Generic_Render(posx, posy) { 
 Render_lx::Render_lx(double _posx, double _posy) : Generic_Render(posx, posy) { posx = _posx;  posy = _posy; print(); Identificador_letra = 24; }
 Render_ly::Render_ly(double _posx, double _posy) : Generic_Render(posx, posy) { posx = _posx;  posy = _posy; print(); Identificador_letra = 25; }
 Render_lz::Render_lz(double _posx, double _posy) : Generic_Render(posx, posy) { posx = _posx;  posy = _posy; print(); Identificador_letra = 26; }
-Render_arrow::Render_arrow(double _posx, double _posy) : Generic_Render(posx, posy) { posx = _posx;  posy = _posy; print(); Identificador_letra = 27;}
+Render_arrow::Render_arrow(double _posx, double _posy) : Generic_Render(posx, posy) { posx = _posx;  posy = _posy; print(); Identificador_letra = 27; }
 Render_space::Render_space(double _posx, double _posy) : Generic_Render(posx, posy) { posx = _posx;  posy = _posy; print(); Identificador_letra = 26; }
 unsigned int Generic_Render::color[3] = { 0,1,0 };
-double Generic_Render::scala[3] = { 1,1,0 };
+double Generic_Render::scala[3] = { 0.7,0.7,0 };
 
 void Render_la::print() {
 	glPushMatrix();
-	glScaled(scala[0],scala[1],scala[2]);
-	 glPushMatrix();
-	 glTranslated(posx + 0.019, posy, 0);
-	 glScaled(0.2, 0.25, 0);
-	 glColor3d(color[0], color[1], color[2]);
-	 glBegin(GL_LINES);
-	 glVertex2f(0.002f, 0.002f);
-	 glVertex2f(-0.15f, 0.002f);
-	 glVertex2f(-0.15f, 0.002f);
-	 glVertex2f(-0.15f, -0.15f);
-	 glVertex2f(0.002f, 0.002f);
-	 glVertex2f(0.0f, -0.15f);
-	 glVertex2f(-0.03f, -0.1f);
-	 glVertex2f(-0.13f, -0.1f);
-	 glEnd();
-	 glPopMatrix();
+	glScaled(scala[0], scala[1], scala[2]);
+	glPushMatrix();
+	glTranslated(posx + 0.019, posy, 0);
+	glScaled(0.2, 0.25, 0);
+	glColor3d(color[0], color[1], color[2]);
+	glBegin(GL_LINES);
+	glVertex2f(0.002f, 0.002f);
+	glVertex2f(-0.15f, 0.002f);
+	glVertex2f(-0.15f, 0.002f);
+	glVertex2f(-0.15f, -0.15f);
+	glVertex2f(0.002f, 0.002f);
+	glVertex2f(0.0f, -0.15f);
+	glVertex2f(-0.03f, -0.1f);
+	glVertex2f(-0.13f, -0.1f);
+	glEnd();
+	glPopMatrix();
 	glPopMatrix();
 }
 
@@ -77,13 +77,13 @@ void Render_lb::print() {
 
 	glEnd();
 	glPopMatrix();
-	    
+
 	glPopMatrix();
 }
 
 void Render_lc::print() {
 	glPushMatrix();
-	glScaled(scala[0],scala[1],0);
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx + 0.01, posy - 0.001, 0);
 	glScaled(0.2, 0.2, 0);
@@ -134,7 +134,7 @@ void Render_ld::print() {
 
 void Render_le::print() {
 	glPushMatrix();
-	glScaled(scala[0],scala[1],0);
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx, posy - 0.016, 0);
 	glScaled(0.16, 0.18, 0);
@@ -156,7 +156,7 @@ void Render_le::print() {
 
 	glEnd();
 	glPopMatrix();
-	  
+
 
 	glPopMatrix();
 
@@ -190,7 +190,7 @@ void Render_lf::print()
 
 void Render_lg::print() {
 	glPushMatrix();
-	glScaled(scala[0],scala[1],0);
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx, posy - 0.022, 0);
 	glScaled(0.4, 0.52, 0);
@@ -226,7 +226,7 @@ void Render_lg::print() {
 }
 void Render_lh::print() {
 	glPushMatrix();
-	glScaled(scala[0],scala[1],0);
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx, posy - 0.04, 0);
 	glScaled(0.6, 0.65, 0);
@@ -343,7 +343,7 @@ void Render_ll::print() {
 
 void Render_lm::print() {
 	glPushMatrix();
-	glScaled(scala[0],scala[1],0);
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx - 0.014, posy - 0.035, 0);
 	glScaled(0.4, 0.67, 0);
@@ -429,7 +429,7 @@ void Render_lo::print() {
 }
 void Render_lp::print() {
 	glPushMatrix();
-	glScaled(scala[0], scala[1],0);
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx, posy - 0.05, 0);
 	glScaled(0.9, 0.9, 0);
@@ -488,19 +488,71 @@ void Render_lq::print() {
 void Render_lr::print() {
 	glPushMatrix();
 	glScaled(scala[0], scala[1], 0);
+	    
+	glPushMatrix();
+	glTranslated(posx - 0.014, posy - 0.040, 0);
+	glScaled(0.9, 0.78, 0);
+	glColor3d(color[0], color[1], color[2]);
+
+	glBegin(GL_LINES);
+
+	glVertex2f(0.00f, 0.00f);
+	glVertex2f(0.00f, 0.05f);
+
+	glVertex2f(0.00f, 0.05f);
+	glVertex2f(0.03f, 0.05f);
+
+	glVertex2f(0.03f, 0.05f);
+	glVertex2f(0.03f, 0.025f);
+
+	glVertex2f(0.03f, 0.025f);
+	glVertex2f(0.00f, 0.024f);
+
+	glVertex2f(0.00f, 0.024f);
+	glVertex2f(0.025f, 0.00f);
+
+	glEnd();
+	glPopMatrix();
+	 
 	glPopMatrix();
 }
 
 void Render_ls::print() {
 	glPushMatrix();
 	glScaled(scala[0], scala[1], 0);
+	glPushMatrix();
+	glTranslated(posx - 0.014, posy - 0.017, 0);
+	glScaled(0.65, 0.45, 0);
+	glColor3d(color[0], color[1], color[2]);
+
+	glBegin(GL_LINES);
+
+	glVertex2f(0.00f, 0.04f);
+	glVertex2f(0.00f, 0.00f);
+
+	glVertex2f(0.00f, 0.04f);
+	glVertex2f(0.03f, 0.04f);
+
+	glVertex2f(0.00f, 0.00f);
+	glVertex2f(0.03f, 0.00f);
+
+	glVertex2f(0.03f, 0.00f);
+	glVertex2f(0.03f, -0.04f);
+
+	glVertex2f(0.03f, -0.04f);
+	glVertex2f(0.00f, -0.04f);
+
+	glEnd();
+
+	glPopMatrix();
+
 	glPopMatrix();
 }
 
 void Render_lt::print() {
 
 	glPushMatrix();
-	glScaled(scala[0],scala[1],0);
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx, posy - 0.04, 0);
 	glScaled(0.8, 0.75, 0);
@@ -654,8 +706,8 @@ void Render_ly::print() {
 	glPopMatrix();
 }
 void Render_lz::print() {
-	glPushMatrix(); 
-	glScaled(scala[0],scala[1],0);
+	glPushMatrix();
+	glScaled(scala[0], scala[1], 0);
 	glPushMatrix();
 	glTranslated(posx, posy - 0.02, 0);
 	glScaled(0.5, 0.5, 0);
@@ -705,6 +757,3 @@ void Render_space::print() {
 	glEnd();
 	glPopMatrix();
 }
-
-
-

@@ -3,21 +3,17 @@
 #include <vector>
 #include "render.hpp"
 
-
 using std::move;
 using std::string;
 using std::vector;
 
 Gltext::Gltext(string _cadena, double _posx, double _posy, double espace) : posx(move(_posx)), posy(move(_posy)), cadena(move(_cadena)), desfase(move(espace)) { split(); print(); }
-
 Gltext::Gltext(string _cadena, double _posx, double _posy) : posx(move(_posx)), posy(move(_posy)), cadena(move(_cadena)) { split(); print(); }
 
 
 void Gltext::split() {
 	int size = cadena.length();
-	for (int i = 0; i < size; i++) {
-		fragmento_cadena.push_back(cadena[i]);
-	}
+	for (int i = 0; i < size; i++) { fragmento_cadena.push_back(cadena[i]); }
 }
 
 void Gltext::print() {
@@ -86,7 +82,7 @@ void Gltext::print() {
 		else if (it == 'm') {
 			Render_lm* m = new Render_lm(posx+0.012, posy);
 			m->~Render_lm();
-			posx += desfase;
+			posx += desfase + 0.005;
 		}
 		else if (it == 'n') {
 			Render_ln* n = new Render_ln(posx+0.011, posy);
@@ -126,7 +122,7 @@ void Gltext::print() {
 		else if (it == 'u') {
 			Render_lu* u = new Render_lu(posx, posy);
 			u->~Render_lu();
-			posx += desfase;
+			posx += desfase + 0.005;
 		}
 		else if (it == 'v') {
 			Render_lv* v = new Render_lv(posx, posy);
@@ -176,15 +172,9 @@ void Gltext::allColor(int r, int g, int b) { Generic_Render::setColor(r,g,b);}
 void allColor(int r, int g, int b) {
 	Gltext::allColor(r, g, b);
 }
-void Gltext::smallText(bool flag) {
-	if (flag) {
-		Generic_Render::setScala(true);
-	}
-	else {
-		Generic_Render::setScala(false);
-	}
+void Gltext::changeScala(int x,int y) {
+	Generic_Render::setScala(x,y);
 }
-void smallText(bool flag) {Gltext::smallText(flag);}
 
 
 
