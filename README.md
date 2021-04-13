@@ -14,12 +14,12 @@ en el caso de visual studio se requiere freeglut mcvs, lo puedes descargar aqui 
 ### declaracion
 una vez agregada la libreria en la parte grafica solo resta declar y ubicar el resultado
 
- ![howuse](howuse.png?raw=true "Guiause")
+ ![howuse](howuse.PNG?raw=true "Guiause")
 
 
 **y como resultado tenemos esto**
 
- ![result](result.png?raw=true "Guiaresult")
+ ![result](result.PNG?raw=true "Guiaresult")
 
 ### como funcionan las pociciones?
 
