@@ -7,20 +7,23 @@ using std::string;
 using std::move;
 using std::vector;
 
-class Gltext {
+class Gltext{
 protected:
 
 	double posx;
 	double posy;
+	double desfase = 0.05;
 	string cadena;
 	vector<char>fragmento_cadena;
-	vector<int>map_cadena;
 
 public:
+	Gltext(string, double, double, double);
 	Gltext(string, double, double);
 	void split();
-	void asignar();
 	void print();
-	void tester();
-
+	static void allColor(int, int, int);
+	static void smallText(bool);
 };
+
+void allColor(int,int,int);
+void smallText(bool);

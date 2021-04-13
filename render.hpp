@@ -10,7 +10,11 @@ protected:
 	double posx = 0;
 	double posy = 0;
 	int Identificador_letra = 0;
+	static unsigned int color[3];
+	static double scala[3];
 public:
+	static void setColor(int r, int g, int b) { color[0] = r; color[1] = g; color[2] = b; }
+	static void setScala(bool flag) { if (flag) { scala[0] = 0.8; scala[1] = 0.8; } else { scala[0] = 1; scala[1] = 1; } }
 	Generic_Render(double,double) {}
 	virtual void print() = 0;
 };
@@ -18,6 +22,7 @@ public:
 
 class Render_la : public  Generic_Render {
 public:
+	using Generic_Render::Generic_Render;
 	Render_la(double,double);
 	void print();
 
@@ -160,5 +165,18 @@ public:
 	Render_lz(double, double);
 	void print();
 };
+
+class Render_arrow : public Generic_Render {
+public:
+	Render_arrow(double,double);
+	void print();
+};
+
+class Render_space : public Generic_Render {
+public:
+	Render_space(double, double);
+	void print();
+};
+
 
 #endif
