@@ -1,4 +1,4 @@
-#include "gltext.hpp"
+#include "textoso.hpp"
 #include <string>
 #include <vector>
 #include "render.hpp"
@@ -175,38 +175,3 @@ void allColor(int r, int g, int b) {
 void Gltext::changeScala(int x,int y) {
 	Generic_Render::setScala(x,y);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
