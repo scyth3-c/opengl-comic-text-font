@@ -24,7 +24,7 @@ void Gltext::print() {
 			posx += desfase;
 		}
 		else if (it == 'b') {
-			Render_lb* b = new Render_lb(posx,posy);
+			Render_lb* b = new Render_lb(posx, posy);
 			b->~Render_lb();
 			posx += desfase + 0.015;
 		}
@@ -50,7 +50,7 @@ void Gltext::print() {
 
 		}
 		else if (it == 'g') {
-			Render_lg *g = new Render_lg(posx, posy);
+			Render_lg* g = new Render_lg(posx, posy);
 			g->~Render_lg();
 			posx += desfase;
 		}
@@ -80,17 +80,17 @@ void Gltext::print() {
 			posx += desfase;
 		}
 		else if (it == 'm') {
-			Render_lm* m = new Render_lm(posx+0.012, posy);
+			Render_lm* m = new Render_lm(posx + 0.012, posy);
 			m->~Render_lm();
 			posx += desfase + 0.005;
 		}
 		else if (it == 'n') {
-			Render_ln* n = new Render_ln(posx+0.011, posy);
+			Render_ln* n = new Render_ln(posx + 0.011, posy);
 			n->~Render_ln();
 			posx += desfase;
 		}
 		else if (it == 'o') {
-			Render_lo* o = new Render_lo(posx+0.007, posy);
+			Render_lo* o = new Render_lo(posx + 0.007, posy);
 			o->~Render_lo();
 			posx += desfase + 0.007;
 		}
@@ -145,35 +145,35 @@ void Gltext::print() {
 			posx += desfase;
 		}
 		else if (it == 'z') {
-		Render_lz* z = new Render_lz(posx, posy);
-		z->~Render_lz();
-		posx += desfase;
+			Render_lz* z = new Render_lz(posx, posy);
+			z->~Render_lz();
+			posx += desfase;
 		}
 		else if (it == '>') {
-		Render_arrow* arrow = new Render_arrow(posx, posy);
-		arrow->~Render_arrow();
-		posx += desfase;
+			Render_arrow* arrow = new Render_arrow(posx, posy);
+			arrow->~Render_arrow();
+			posx += desfase;
 		}
 		else if (it == ' ') {
-		Render_space* space = new Render_space(posx, posy);
-		space->~Render_space();
-		posx += desfase + 0.015 ;
+			Render_space* space = new Render_space(posx, posy);
+			space->~Render_space();
+			posx += desfase + 0.015;
 		}
 		else {
-		Render_lx* error = new Render_lx(posx, posy);
-		error->~Render_lx();
-		posx += desfase;
+			Render_lx* error = new Render_lx(posx, posy);
+			error->~Render_lx();
+			posx += desfase;
 		}
 	}
 }
 
-void Gltext::allColor(int r, int g, int b) { Generic_Render::setColor(r,g,b);}
+void Gltext::allColor(int r, int g, int b) { Generic_Render::setColor(r, g, b); }
 
 void allColor(int r, int g, int b) {
 	Gltext::allColor(r, g, b);
 }
 void Gltext::changeScala(int es) {
-	Generic_Render::setScala(es,es);
+	Generic_Render::setScala(es, es);
 }
 
 

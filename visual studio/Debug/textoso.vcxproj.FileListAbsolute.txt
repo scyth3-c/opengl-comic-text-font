@@ -1,0 +1,2 @@
+C:\Users\bhert\OneDrive\Documentos\GitHub\textoso\visual studio\textoso\Debug\textoso.exe
+C:\Users\bhert\OneDrive\Documentos\GitHub\textoso\visual studio\textoso\Debug\textoso.pdb

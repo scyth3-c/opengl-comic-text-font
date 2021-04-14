@@ -488,7 +488,7 @@ void Render_lq::print() {
 void Render_lr::print() {
 	glPushMatrix();
 	glScaled(scala[0], scala[1], 0);
-	    
+
 	glPushMatrix();
 	glTranslated(posx - 0.014, posy - 0.040, 0);
 	glScaled(0.9, 0.78, 0);
@@ -513,7 +513,7 @@ void Render_lr::print() {
 
 	glEnd();
 	glPopMatrix();
-	 
+
 	glPopMatrix();
 }
 

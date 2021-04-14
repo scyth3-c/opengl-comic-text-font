@@ -28,8 +28,8 @@ void Graph::start() {
 
 void Graph::display() {
 	glClear(GL_COLOR_BUFFER_BIT);
-  
-	
+
+
 	allColor(1, 1, 0);
 
 	Gltext saludo("hello a cartoon word", 0, 0);
@@ -41,7 +41,7 @@ void Graph::display() {
 
 	allColor(0, 1, 0);
 	Gltext giant("> > >", 0.5, -0.8);
-  
+
 
 
 	glFlush();

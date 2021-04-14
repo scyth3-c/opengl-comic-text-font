@@ -1,0 +1,5 @@
+1. descomprime freeglut-MSVC-3.0.0-2.mp o descarga una nueva version
+
+2. la carpeta resultado se mueve a C:\
+
+3. abre textoso.vcxproj con visual studio

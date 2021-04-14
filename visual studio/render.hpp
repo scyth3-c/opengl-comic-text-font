@@ -14,8 +14,8 @@ protected:
 	static double scala[3];
 public:
 	static void setColor(int r, int g, int b) { color[0] = r; color[1] = g; color[2] = b; }
-	static void setScala(int x,int y) {  scala[0] = x; scala[1] = y; }
-	Generic_Render(double,double) {}
+	static void setScala(int x, int y) { scala[0] = x; scala[1] = y; }
+	Generic_Render(double, double) {}
 	virtual void print() = 0;
 };
 
@@ -23,7 +23,7 @@ public:
 class Render_la : public  Generic_Render {
 public:
 	using Generic_Render::Generic_Render;
-	Render_la(double,double);
+	Render_la(double, double);
 	void print();
 
 };
@@ -47,7 +47,7 @@ public:
 class Render_le : public Generic_Render
 {
 public:
-	Render_le(double,double);
+	Render_le(double, double);
 	void print();
 };
 
@@ -168,7 +168,7 @@ public:
 
 class Render_arrow : public Generic_Render {
 public:
-	Render_arrow(double,double);
+	Render_arrow(double, double);
 	void print();
 };
 
