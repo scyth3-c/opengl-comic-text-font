@@ -9,7 +9,7 @@ de no tener los requerimientos para ejecutarlo, en la carpeta linux se encuentra
 
 ### visual studio
 
-en el caso de visual studio se requiere freeglut mcvs, lo puedes descargar aqui [_Freeglut_](https://www.transmissionzero.co.uk/software/freeglut-devel/), dentro del proyecto y ubicado freeglut se agrega el contenido de [_Freeglut_](https://www.transmissionzero.co.uk/software/freeglut-devel/) (dependencias, entrada y librerias externas) seguido se mueve _freeglut.dll_ segun el equipo (x86/x64) que se encuentra en bin a la carpeta del codigo fuente del proyecto
+en el caso de visual studio se requiere freeglut mcvs, lo puedes descargar aqui [_Freeglut_](https://www.transmissionzero.co.uk/software/freeglut-devel/), ubicado freeglut se agrega el contenido de [_Freeglut_](https://www.transmissionzero.co.uk/software/freeglut-devel/) (directorios de inclusion adicionales, directorio de bibliotecas adicionales y dependencias adicionales) ya esta listo, sin embarg _el proyecto ya posee esta configuracion_ solo faltando agregar la carpeta _freeglut_ a *C:\* 
 
 ### uso
 una vez agregada la libreria en la parte grafica solo resta declar y ubicar el resultado
