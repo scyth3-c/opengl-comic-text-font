@@ -9,9 +9,9 @@ de no tener los requerimientos para ejecutarlo, en la carpeta linux se encuentra
 
 ### visual studio
 
-en el caso de visual studio se requiere freeglut mcvs, lo puedes descargar aqui [_Freeglut_](https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip), dentro del proyecto y ubicado freeglut se agrega el contenido de [_Freeglut_](https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip) (dependencias, entrada y librerias externas) seguido se mueve _freeglut.dll_ que se encuentra en bin a la carpeta del codigo fuente del proyecto
+en el caso de visual studio se requiere freeglut mcvs, lo puedes descargar aqui [_Freeglut_](https://www.transmissionzero.co.uk/software/freeglut-devel/), dentro del proyecto y ubicado freeglut se agrega el contenido de [_Freeglut_](https://www.transmissionzero.co.uk/software/freeglut-devel/) (dependencias, entrada y librerias externas) seguido se mueve _freeglut.dll_ segun el equipo (x86/x64) que se encuentra en bin a la carpeta del codigo fuente del proyecto
 
-### declaracion
+### uso
 una vez agregada la libreria en la parte grafica solo resta declar y ubicar el resultado
 
  ![howuse](howuse.PNG?raw=true "Guiause")
