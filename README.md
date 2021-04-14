@@ -1,6 +1,6 @@
 # textoso
 
-renderiza texto parecido  a escritura de mano a partir de una cadena de texto, ubicable en cualquier parte de la pantalla, se puede agregar a cualquier proyecto con glut/freeglut, el texto resultado no es uniforme ni plano y puede variar segun la palabra
+renderiza texto retro a partir de una cadena de texto, ubicable en cualquier parte de la pantalla, se puede agregar a cualquier proyecto con glut/freeglut, el texto resultado no es uniforme ni plano y puede variar segun la palabra
 
 
 ### linux
