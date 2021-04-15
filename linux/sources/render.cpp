@@ -1,4 +1,4 @@
-#include <gl/glut.h>
+#include <GL/glut.h>
 #include "render.hpp"
 
 

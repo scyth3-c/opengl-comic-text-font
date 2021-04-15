@@ -1,4 +1,4 @@
-#include "graficos/graficos.hpp"
+#include "graficos.hpp"
 
 
 int main(int argc, char** argv) {
