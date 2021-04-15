@@ -5,7 +5,7 @@ renderiza texto retro a partir de una cadena de texto, ubicable en cualquier par
 
 ### linux
 
-de no tener los requerimientos para ejecutarlo, en la carpeta linux se encuentra **requerimientos.sh** que instalara lo necesario para correrlo, es necesario ejecutarlo con sudo ```sudo ./requerimientos``` esto instalara freeglut y mesa-utils
+en la ruta _textoso/linux/sources_ se encuentra el archivo makefile con lo necesario  para compilar y generar el archivo ejecutable en la ruta _textoso/linux/bin_, de no tener los requerimientos necesarios para compilar, en la carpeta _linux_ se encuentra **requerimientos.sh** que instalara lo necesario para correrlo, es necesario ejecutarlo con sudo ```sudo bash requerimientos.sh``` esto instalara freeglut y mesa-utils
 
 ### visual studio
 
