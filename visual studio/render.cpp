@@ -33,6 +33,8 @@ Render_space::Render_space(double _posx, double _posy) : Generic_Render(posx, po
 unsigned int Generic_Render::color[3] = { 0,1,0 };
 double Generic_Render::scala[3] = { 0.7,0.7,0 };
 
+
+
 void Render_la::print() {
 	glPushMatrix();
 	glScaled(scala[0], scala[1], scala[2]);
@@ -590,7 +592,6 @@ void Render_lu::print() {
 
 	glVertex2f(0.025f, 0.00f);
 	glVertex2f(0.025f, 0.05f);
-
 
 	glEnd();
 
