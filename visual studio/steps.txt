@@ -3,3 +3,5 @@
 2. la carpeta resultado se mueve a C:\
 
 3. abre textoso.vcxproj con visual studio
+
+4. verificar que el debug de visual studio sea el mismo de freeglut
